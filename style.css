@@ -1,66 +1,12 @@
-.v-card {
-    /* display: flex: les éléments qu'il contient peuvent être 
-      positionnés et redimensionnés en fonction de la taille de l'écran */
-      display: flex; 
-      /* flex-direction: column; définit la direction des éléments dans 
-      le conteneur comme verticale, de haut en bas. */
-      flex-direction: column;
-      /* align-items: center; aligne les éléments horizontalement au centre du conteneur. */
-      align-items: center;
-      /* justify-content: space-between; espace les éléments verticalement pour 
-      qu'ils occupent tout l'espace disponible dans le conteneur avec un espace égal entre eux. */
-      justify-content: space-between;
-      width: 600px;
-      height: 800px;
-      border: 1px solid #ccc;
-      /* border-radius: 10px; arrondit les coins de la bordure avec un rayon de 10 pixels. */
-      border-radius: 10px;
-      /* overflow: hidden; masque tout contenu qui dépasse les dimensions de l'élément pour créer une apparence propre et épurée. */
-      overflow: hidden;
-    }
-    
-    .v-card-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 50%;
-      background-color: #afd4aa;
-    }
-    
-    .v-card-header img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-    }
-    
-    .v-card-header h2 {
-      margin-top: 10px;
-      ;
-    }
-    
-    .v-card-content {
-      padding: 20px;
-      text-align: justify;
-      font-size: 20px;
-      color: #7c7474;
-      height: 50%;
-    }
-    
-    .v-card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 10%;
-      background-color: #d4d1d1;
-    }
-    
-    .v-card-footer a {
-      padding: 10px 20px;
-      background-color: #afd4aa;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 10px;
+
+  }
+  
+  .grid-item {
+    background-color: #8fbb92;
+    padding: 50px;
+    text-align: center;
+  }
